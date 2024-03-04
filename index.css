@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'HanyiSentyMarshmallow';
+    src: url('./media/fonts/HanyiSentyMarshmallow.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Sitka';
+    src: url('./media/fonts/SitkaVF.ttf') format('truetype'),
+}
+
+body {
+    background-image: url("./media/bodyBackground.png"), linear-gradient(lightgray, lightgray);
+    background-size: cover, auto;
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+    background-color: #672E2E;
+    box-sizing: border-box;
+}
+
+.column-left {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6vh;
+    padding: 3vh 0;
+}
+
+.column-right {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-right: 6vh;
+    right: 0%;
+    padding: 3vh 0;
+    color: transparent;
+}
+
+.year {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 999px;
+    outline: 1.5px solid #EDD037;
+    background-color: transparent;    
+    margin: 1.3vh 0;
+    color: transparent;
+}
+
+.year-text {
+    color: #EDD037;
+    text-align: center;
+    font-family: HanyiSentyMarshmallow;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transform: translateY(-10px);
+}
+
+.heading {
+    color: #EDD037;
+    font-family: Sitka;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* STATE: HOME */
+
+.body-home {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 33vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+div.body-home > input {
+    margin-top: 5vh;
+}
+
+input[type="date"] {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-family: Sitka;
+    font-size: 16px;
+    color: #EDD037;
+    font-weight: normal;
+    padding: 10px;
+    border: 1.5px solid #EDD037;
+    border-radius: 5px;
+}
+
+.button-submit {
+    margin-top: 3vh;
+    width: 290px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #EDD037;
+}
+
+.button-submit-text {
+    transform: translateY(-3px);
+    color: #672E2E;
+    text-align: center;
+    font-family: Sitka;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-image: url('./media/iconCalendar.svg');
+
+}
+
+/* STATE: ZODIAC */
+
+.button-back {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 999px;
+    outline: 1.5px solid #EDD037;
+    background-color: transparent;    
+    margin: 1.3vh 0;
+    color: transparent;
+}
+
+.button-back-padding {
+    position:absolute;    
+    left: 50vw;
+    top: 3vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-zodiac {
+    display: none;
+}
+
+.body-zodiac-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: absolute;
+    padding-top: 50vh;
+    left: 30vw;
+    transform: translate(-35%, -25%);
+}
+
+.body-zodiac-card {
+    position: absolute;
+    right: 18vw;
+    top: 22vh;
+    width: 332.762px;
+    height: 486.324px;
+    transform: rotate(8.543deg);
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #EDD037;
+    background: #1E1E1E;
+    box-shadow: 0px 4px 14.2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.body-zodiac-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.heading-zodiac-text {
+    color: #FF7373;
+    text-align: center;
+    -webkit-text-stroke-width: 0.5;
+    -webkit-text-stroke-color: #643D3D;
+    font-family: HanyiSentyMarshmallow;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transform: translateX(10px);
+}
+
+.body-zodiac-font {
+    width: 30vw;
+    color: #FFF;
+    font-family: Sitka;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}

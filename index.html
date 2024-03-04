@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="./index.js"></script>
+    <title>Chinese Zodiac Generator</title>
+</head>
+<body>
+<div class="column-left">
+    <button class="year" id="year-rat">
+        <h2 class="year-text">
+            鼠
+        </h2>
+    </button>
+    <button class="year" id="year-ox">
+        <h2 class="year-text">
+            牛
+        </h2>
+    </button>
+    <button class="year" id="year-tiger">
+        <h2 class="year-text">
+            虎
+        </h2>
+    </button>
+    <button class="year" id="year-rabbit">
+        <h2 class="year-text">
+            兔
+        </h2>
+    </button>
+    <button class="year" id="year-dragon">
+        <h2 class="year-text">
+            龙
+        </h2>
+    </button>
+    <button class="year" id="year-snake">
+        <h2 class="year-text">
+            蛇
+        </h2>
+    </button>
+</div>
+<div class="column-right">
+    <button class="year" id="year-horse">
+        <h2 class="year-text">
+            马
+        </h2>
+    </button>
+    <button class="year" id="year-goat">
+        <h2 class="year-text">
+            羊
+        </h2>
+    </button>
+    <button class="year" id="year-monkey">
+        <h2 class="year-text">
+            猴
+        </h2>
+    </button>
+    <button class="year" id="year-rooster">
+        <h2 class="year-text">
+            鸡
+        </h2>
+    </button>
+    <button class="year" id="year-dog">
+        <h2 class="year-text">
+            狗
+        </h2>
+    </button>
+    <button class="year" id="year-pig">
+        <h2 class="year-text">
+            猪
+        </h2>
+    </button>
+</div>
+<div class="body-home" id="body-home">
+    <h1 class="heading">
+        When were you born?
+    </h1>
+    <input type="date" id="start" value="2023-12-31" min="1950-01-01" max="2023-12-31" />
+    <button class="button-submit" id="submit-button">
+        <h1 class="button-submit-text">
+            submit
+        </h1>
+    </button>
+</div>
+<div class="body-zodiac" id="body-zodiac">
+    <button class="button-back button-back-padding" id="back-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="26" viewBox="0 0 15 26" fill="none">
+            <path d="M14 0.999998L1 13L14 25" stroke="#EDD037" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+    </button>
+        <div class="body-zodiac-text">
+            <div class="body-zodiac-header">
+                <h1 class="heading">
+                    You are a 
+                </h1>
+                <h1 class="heading-zodiac-text" id="zodiac-text">
+                    虎 (TIGER)
+                </h1>
+            </div>
+            <p class="body-zodiac-font">
+                Yorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.
+            </p>
+        </div>
+    <div class="body-zodiac-card"></div>
+</div>
+</body>
