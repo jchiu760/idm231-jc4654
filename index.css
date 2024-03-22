@@ -17,6 +17,15 @@ body {
     box-sizing: border-box;
 }
 
+p {
+    color: #FFF;
+    font-family: Sitka;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
+
 .column-left {
     position: absolute;
     display: flex;
@@ -75,13 +84,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 33vh;
+    top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
+    gap: 5rem;
 }
 
 div.body-home > input {
     margin-top: 5vh;
+}
+
+.body-home-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 input[type="date"] {
@@ -99,6 +117,7 @@ input[type="date"] {
 
 button {
     cursor: pointer;
+    transform-origin: center;
 }
 
 button:active {
@@ -106,6 +125,7 @@ button:active {
     background-color: rgba(111, 1, 1, 0.40);
     background-blend-mode: multiply;
     transition: all 0.02s ease-out;
+    transform-origin: center;
 }
 
 .button-submit {
@@ -121,6 +141,7 @@ button:active {
     background: linear-gradient(0deg, rgba(111, 1, 1, 0.40) 0%, rgba(111, 1, 1, 0.40) 100%), #B8A22D;
     background-blend-mode: multiply, normal;
     transition: all 0.02s ease-out;
+    transform-origin: center;
 }
 
 .button-submit-text {
@@ -134,9 +155,42 @@ button:active {
     line-height: normal;
 }
 
+.help {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+
+#help-section {
+    display: none;
+    text-align: center;
+    line-height: 200%;
+}
+
+.button-help {    
+    width: 8vh;
+    height: 8vh;
+    border-radius: 999px;
+    outline: 1.5px solid #EDD037;
+    background-color: transparent;    
+    margin: 1.3vh 0;
+    color: transparent;
+}
+
+.button-help-text {
+    color: #EDD037;
+    text-align: center;
+    font-family: HanyiSentyMarshmallow;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transform: translateY(-10px);
+}
+
 ::-webkit-calendar-picker-indicator {
     background-image: url('./media/iconCalendar.svg');
-
 }
 
 /* STATE: ZODIAC */

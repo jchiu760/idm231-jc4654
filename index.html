@@ -8,78 +8,103 @@
     <title>Chinese Zodiac Generator</title>
 </head>
 <body>
+        <audio id="rat-audio" src="./media/rataudio.wav"></audio>
+<audio id="ox-audio" src="./media/oxaudio.wav"></audio>
+<audio id="tiger-audio" src="./media/tigeraudio.wav"></audio>
+<audio id="rabbit-audio" src="./media/rabbitaudio.wav"></audio>
+<audio id="dragon-audio" src="./media/dragonaudio.wav"></audio>
+<audio id="snake-audio" src="./media/snakeaudio.wav"></audio>
+<audio id="horse-audio" src="./media/horseaudio.wav"></audio>
+<audio id="goat-audio" src="./media/goataudio.wav"></audio>
+<audio id="monkey-audio" src="./media/monkeyaudio.wav"></audio>
+<audio id="rooster-audio" src="./media/roosteraudio.wav"></audio>
+<audio id="dog-audio" src="./media/dogaudio.wav"></audio>
+<audio id="pig-audio" src="./media/pigaudio.wav"></audio>
 <div class="column-left">
-    <button class="year year-text" id="year-rat" data-year="2009">
+    <button class="year year-text" id="year-rat" data-year="2008">
             鼠
     </button>
-    <button class="year year-text" id="year-ox" data-year="2010">
+    <button class="year year-text" id="year-ox" data-year="2009">
             牛
     </button>
-    <button class="year year-text" id="year-tiger" data-year="2011">
+    <button class="year year-text" id="year-tiger" data-year="2010">
             虎
     </button>
-    <button class="year year-text" id="year-rabbit" data-year="2012">
+    <button class="year year-text" id="year-rabbit" data-year="2011">
         
             兔
         
     </button>
-    <button class="year year-text" id="year-dragon" data-year="2013">
+    <button class="year year-text" id="year-dragon" data-year="2012">
         
             龙
         
     </button>
-    <button class="year year-text" id="year-snake" data-year="2014">
+    <button class="year year-text" id="year-snake" data-year="2013">
         
             蛇
         
     </button>
 </div>
 <div class="column-right">
-    <button class="year year-text" id="year-horse" data-year="2015">
+    <button class="year year-text" id="year-horse" data-year="2014">
         
             马
         
     </button>
-    <button class="year year-text" id="year-goat" data-year="2016">
+    <button class="year year-text" id="year-goat" data-year="2015">
         
             羊
         
     </button>
-    <button class="year year-text" id="year-monkey" data-year="2017">
+    <button class="year year-text" id="year-monkey" data-year="2016">
         
             猴
         
     </button>
-    <button class="year year-text" id="year-rooster" data-year="2018">
+    <button class="year year-text" id="year-rooster" data-year="2017">
         
             鸡
         
     </button>
-    <button class="year year-text" id="year-dog" data-year="2019">
+    <button class="year year-text" id="year-dog" data-year="2018">
         
             狗
         
     </button>
-    <button class="year year-text" id="year-pig" data-year="2020">
+    <button class="year year-text" id="year-pig" data-year="2019">
         
             猪
         
     </button>
 </div>
 <div class="body-home" id="body-home">
-    <h1 class="heading">
-        When were you born?
-    </h1>
-    <input type="date" id="start" value="2023-12-31" min="1950-01-01" max="2023-12-31" />
-    <button class="button-submit button-submit-text" id="submit-button">
-            submit
-    </button>
+    <div class="body-home-heading">
+        <h1 class="heading">
+            When were you born?
+        </h1>
+        <input type="date" id="start" value="2023-12-31" min="1950-01-01" max="2023-12-31" />
+        <button class="button-submit button-submit-text" id="submit-button">
+                submit
+        </button>            
+    </div>
+    <div class="help">
+        <button class="button-help-text button-help" id="help-button">
+            ?
+        </button>
+        <div id="help-section">
+                <p>
+                Enter your date of birth using the Calendar icon in the input field above to discover your Chinese zodiac. <br>
+                Alternatively, explore all of the zodiacs using the buttons on the left and right sides.
+                </p>
+        </div>
+    </div>
 </div>
 <div class="body-zodiac" id="body-zodiac">
     <button class="button-back button-back-padding" id="back-button">
         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="26" viewBox="0 0 15 26" fill="none">
-            <path d="M14 0.999998L1 13L14 25" stroke="#EDD037" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+                <path d="M14 0.999998L1 13L14 25" stroke="#EDD037" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
     </button>
         <div class="body-zodiac-text">
             <div class="body-zodiac-header">
