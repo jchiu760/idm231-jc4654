@@ -51,6 +51,7 @@ document.getElementById('submit-button').addEventListener('click', function() {
 });
 document.getElementById('back-button').addEventListener('click', function() {
   changeState('home');
+  stopAllAudio();
         checkZodiac();
 });
 
