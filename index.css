@@ -105,6 +105,7 @@ button:active {
     transform: scale(0.95);
     background-color: rgba(111, 1, 1, 0.40);
     background-blend-mode: multiply;
+    transition: all 0.02s ease-out;
 }
 
 .button-submit {
@@ -119,6 +120,7 @@ button:active {
 .button-submit:active {
     background: linear-gradient(0deg, rgba(111, 1, 1, 0.40) 0%, rgba(111, 1, 1, 0.40) 100%), #B8A22D;
     background-blend-mode: multiply, normal;
+    transition: all 0.02s ease-out;
 }
 
 .button-submit-text {
