@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url("./media/bodyBackground.png"), linear-gradient(lightgray, lightgray);
+    background-image: url("./media/bodyBackground.jpg"), linear-gradient(lightgray, lightgray);
     background-size: cover, auto;
     background-repeat: repeat;
     background-blend-mode: multiply;
