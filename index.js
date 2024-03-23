@@ -83,6 +83,7 @@ function setZodiacData(inputYear) {
 
     const zodiacText = document.getElementById('zodiac-text');
     const zodiacBody = document.querySelector('.body-zodiac-font');
+    const zodiacCard = document.querySelector('.body-zodiac-card');
 
     const endYear = 2043;
     const baseYear = 1936; // rat starting yr
@@ -118,6 +119,7 @@ function setZodiacData(inputYear) {
     if (ratYears.includes(inputYear)) {
         zodiacText.textContent = '鼠 (RAT)';
         ratAudio.play();
+        zodiacCard.style.backgroundImage = "url('./media/cardrat.jpg')";
     
         const p1 = document.createElement("p");
         p1.textContent = 'The rat is considered clever, resourceful, and adaptable. In Chinese folklore, the rat is known for its intelligence and ability to overcome challenges.  In Chinese tradition, it is believed that wearing accessories or clothing with rat imagery can bring luck and prosperity.';
@@ -128,6 +130,8 @@ function setZodiacData(inputYear) {
  
       } else if (oxYears.includes(inputYear)) {
           zodiacText.textContent = '牛 (OX)';
+          
+        zodiacCard.style.backgroundImage = "url('./media/cardox.jpg')";
           
         oxAudio.play();
                   const p1 = document.createElement("p");
@@ -140,6 +144,8 @@ function setZodiacData(inputYear) {
       } else if (tigerYears.includes(inputYear)) {
           zodiacText.textContent = '虎 (TIGER)';
           
+        zodiacCard.style.backgroundImage = "url('./media/cardtiger.jpg')";
+          
         tigerAudio.play();
                   const p1 = document.createElement("p");
         p1.textContent = 'The Tiger is known as the king of all beasts in China. The zodiac sign Tiger is a symbol of strength, exorcising evils, and braveness. Many Chinese kids wear hats or shoes with a tiger image for good luck.';
@@ -150,6 +156,7 @@ function setZodiacData(inputYear) {
 
       } else if (rabbitYears.includes(inputYear)) {
           zodiacText.textContent = '兔 (RABBIT)';
+          zodiacCard.style.backgroundImage = "url('./media/cardrabbit.jpg')";
           
         rabbitAudio.play();
                   const p1 = document.createElement("p");
@@ -161,6 +168,7 @@ function setZodiacData(inputYear) {
 
       } else if (dragonYears.includes(inputYear)) {
           zodiacText.textContent = '龙 (DRAGON)';
+          zodiacCard.style.backgroundImage = "url('./media/carddragon.jpg')";
           
         dragonAudio.play();
                   const p1 = document.createElement("p");
@@ -172,6 +180,7 @@ function setZodiacData(inputYear) {
 
       } else if (snakeYears.includes(inputYear)) {
           zodiacText.textContent = '蛇 (SNAKE)';
+          zodiacCard.style.backgroundImage = "url('./media/cardsnake.jpg')";
           
         snakeAudio.play();
                   const p1 = document.createElement("p");
@@ -183,6 +192,7 @@ function setZodiacData(inputYear) {
 
       } else if (horseYears.includes(inputYear)) {
           zodiacText.textContent = '马 (HORSE)';
+          zodiacCard.style.backgroundImage = "url('./media/cardhorse.jpg')";
           
         horseAudio.play();
                   const p1 = document.createElement("p");
@@ -194,6 +204,7 @@ function setZodiacData(inputYear) {
 
       } else if (goatYears.includes(inputYear)) {
           zodiacText.textContent = '羊 (GOAT)';
+          zodiacCard.style.backgroundImage = "url('./media/cardgoat.jpg')";
           
         goatAudio.play();
                   const p1 = document.createElement("p");
@@ -206,6 +217,8 @@ function setZodiacData(inputYear) {
       } else if (monkeyYears.includes(inputYear)) {
           zodiacText.textContent = '猴 (MONKEY)';
           
+        zodiacCard.style.backgroundImage = "url('./media/cardmonkey.jpg')";
+          
         monkeyAudio.play();
                   const p1 = document.createElement("p");
         p1.textContent = 'The Monkey is the ninth of 12 animals in the recurring 12-year Chinese zodiac cycle. It is a symbol of cleverness, versatility, and innovation. People born in the year of the Monkey are usually smart, quick-witted, and versatile. With a mischievous and playful nature, Monkeys are typically entertaining and can be great companions.';
@@ -217,6 +230,7 @@ function setZodiacData(inputYear) {
       } else if (roosterYears.includes(inputYear)) {
           zodiacText.textContent = '鸡 (ROOSTER)';
           
+        zodiacCard.style.backgroundImage = "url('./media/cardrooster.jpg')";
         roosterAudio.play();
                   const p1 = document.createElement("p");
         p1.textContent = 'In Chinese culture, the Rooster is often regarded as a symbol of perseverance, hard work, punctuality, timekeeping, and being alert. People born in the year of Rooster are usually self-assured, confident, and ambitious. They display dedication and discipline towards their tasks, often striving for excellence in whatever they do.';
@@ -227,6 +241,8 @@ function setZodiacData(inputYear) {
 
       } else if (dogYears.includes(inputYear)) {
           zodiacText.textContent = '狗 (DOG)';
+          
+        zodiacCard.style.backgroundImage = "url('./media/carddog.jpg')";
           
         dogAudio.play();
                   const p1 = document.createElement("p");
@@ -239,6 +255,7 @@ function setZodiacData(inputYear) {
       } else if (pigYears.includes(inputYear)) {
           zodiacText.textContent = '猪 (PIG)';
           
+        zodiacCard.style.backgroundImage = "url('./media/cardpig.jpg')";
         pigAudio.play();
                   const p1 = document.createElement("p");
         p1.textContent = 'With a round and fat face, the Pig is the symbol of wealth, felicity, honesty, and practicality in Chinese zodiac culture. Many money pots (Chinese piggybanks) are made pig-shaped as people believe Pig invocation will bring good luck monetarily.';
